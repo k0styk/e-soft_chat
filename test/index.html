@@ -1,0 +1,33 @@
+﻿<html>
+ <head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<script src="js/ajaxSender.js"></script>
+	<script src="js/jquery/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+ </head>
+<body> 
+<!-- <a href="php\myphp.php">MY</a> -->
+<div class="content"id="contentID">
+<form id="t-box" action="javascript:void(null);" >
+	<div id="left" class="flex-box">
+		<select id="list" size="7"></select>
+		<p>
+			<input id="btnSelect" type="submit" value="Выбрать" style="margin-top:5px;" onclick="Select(this);">
+			<input id="btnCancel" type="submit" value="Отмена" style="margin-top:5px;" onclick="Cancel(this);">
+		</p>
+		<p>
+			<input id="btnCreate" type="submit" value="Создать" onclick="Create(this);">
+			<input id="btnDelete" type="submit" value="Удалить" onclick="Delete(this);">
+		</p>
+	</div>
+	<div id="right" class="flex-box">
+		<p><ul id="msg_box"></ul></p>
+		<p><input id="message" type="text" class='text' placeholder="Введите текст...">
+		<input id="btnSend" type="submit" value="Отправить" style="margin-top:5px;" onclick="SendMessage(this);"></p>	
+	</div>
+</form> 
+</div>
+<script src="js/index.js"></script>
+ </body>
+</html>
